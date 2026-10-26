@@ -20,7 +20,7 @@ Vaiheista muodostuu ohjelmiston "elinkaari"
 
 Winston W. Royce: Management of the development of Large Software, 1970
 
-![](https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-kevat2019/master/web/images/l-1.png){ width=440 }
+![](./images/vesiputous.png){ width=400 }
 
 # Roycen kahden iteraation malli
 
@@ -28,7 +28,7 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 # Iteratiivinen ohjelmistokehitys
 
-![](../ohjelmistotuotanto-hy.github.io/images/1-4.png){ width=400 }
+![](./images/iteratiivinen.png){ width=400 }
 
 #
 
