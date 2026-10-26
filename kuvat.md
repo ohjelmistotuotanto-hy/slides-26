@@ -30,6 +30,10 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](./images/iteratiivinen.png){ width=400 }
 
+# Ketterä manifesti 2001
+
+![](./images/agile.png){ width=400 }
+
 #
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luento 2
