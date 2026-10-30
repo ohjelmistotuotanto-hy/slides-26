@@ -82,6 +82,15 @@ Winston W. Royce: Management of the development of Large Software, 1970
   - Small
   - Testable
 
+# Hyvä product backlog on DEEP
+
+- Detailed appropriately
+- Estimated
+- Emergent
+- Prioritized
+
+![](./images/uusi-2-9.png){ width=350 }
+
 #
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luento 4
@@ -90,24 +99,24 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 # Hyvä product backlog on DEEP
 
-- Detailed appropriatly
+- Detailed appropriately
 - Estimated
 - Emergent
 - Prioritized
 
-![](../ohjelmistotuotanto-hy.github.io/images/2-9.png){ width=350 }
+![](./images/uusi-2-9.png){ width=350 }
 
 # Sprint backlog
 
-![](./images/taskboard1.png){ width=400 }
+![](./images/taskboard-uusi.png){ width=400 }
+
+# Puolivalmis työ kasautuu ja asiat eivät valmistu
+
+![](./images/taskboard-sprintti-3.png){ width=400 }
 
 # WIP-rajoitteet
 
-![](./images/wip1.png){ width=400 }
-
-# WIP-rajoitteet
-
-![](./images/wip2.png){ width=400 }
+![](./images/wip-uusi.png){ width=400 }
 
 
 #
