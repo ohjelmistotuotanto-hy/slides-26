@@ -65,12 +65,12 @@ Winston W. Royce: Management of the development of Large Software, 1970
 # User story
 
 - Mike Cohn:
-  - _A user story describes **functionality that will be valuable** to either user or purchaser of software._
+  - _User story kuvaa ohjelmiston käyttäjälle tai tilaajalle **arvoa tuottavan toiminnallisuuden**._
 
-- User stories are composed of three aspects:
-  1. **A written description** 
-  2. **Conversations** 
-  3. **Tests** 
+- User storyssa on kolme osaa:
+  1. **Kirjallinen kuvaus**
+  2. **Keskustelut**
+  3. **Testit**
 
 # Hyvän storyn kriteerit
 
@@ -105,6 +105,22 @@ Winston W. Royce: Management of the development of Large Software, 1970
 - Prioritized
 
 ![](./images/uusi-2-9.png){ width=350 }
+
+# User story mapping
+
+![](./images/uusi-2-15.png){ width=400 }
+
+# Product backlog GitHub Projectsilla
+
+![](../ohjelmistotuotanto-hy.github.io/images/2-27.png){ width=400 }
+
+# Story ja sen taskit
+
+![](../ohjelmistotuotanto-hy.github.io/images/2-29.png){ width=400 }
+
+# Sprint backlog GitHub Projectsilla
+
+![](../ohjelmistotuotanto-hy.github.io/images/2-28.png){ width=400 }
 
 # Sprint backlog
 
