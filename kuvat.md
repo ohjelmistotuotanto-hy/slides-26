@@ -97,42 +97,21 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.11.2026
 
-# Hyvä product backlog on DEEP
+# Scrumban: yksi kanban-taulu
 
-- Detailed appropriately
-- Estimated
-- Emergent
-- Prioritized
+![](./images/scrumban-2.png){ width=400 }
 
-![](./images/uusi-2-9.png){ width=350 }
+# Scrumban: taskit storyn tarkistuslistana
 
-# User story mapping
+![](./images/scrumban-3.png){ width=400 }
 
-![](./images/uusi-2-15.png){ width=400 }
+# Scrumban: storyt riveinä, taskit liikkuvat
 
-# Product backlog GitHub Projectsilla
+![](./images/scrumban-4.png){ width=400 }
 
-![](../ohjelmistotuotanto-hy.github.io/images/2-27.png){ width=400 }
+# Scrumban: jaetut sarakkeet doing / done
 
-# Story ja sen taskit
-
-![](../ohjelmistotuotanto-hy.github.io/images/2-29.png){ width=400 }
-
-# Sprint backlog GitHub Projectsilla
-
-![](../ohjelmistotuotanto-hy.github.io/images/2-28.png){ width=400 }
-
-# Sprint backlog
-
-![](./images/taskboard-uusi.png){ width=400 }
-
-# Puolivalmis työ kasautuu ja asiat eivät valmistu
-
-![](./images/taskboard-sprintti-3.png){ width=400 }
-
-# WIP-rajoitteet
-
-![](./images/wip-uusi.png){ width=400 }
+![](./images/scrumban-5.png){ width=400 }
 
 
 #
