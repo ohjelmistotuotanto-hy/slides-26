@@ -140,34 +140,28 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 # "V-malli"
 
-![](../ohjelmistotuotanto-hy.github.io/images/3-3.png){ width=400 }
+![](./images/v-malli.png){ height=230 }
 
 
 # Testisyötteiden valinta: palautussovellus
 
 - Mitä testitapauksia kannattaisi valita palautussovelluksen testaamiseen?
 
-![](./images/submsystem.png){ width=350 }
+![](./images/submform.png){ width=350 }
 
-# Ohtuvarasto: tyhjä, puolitäysi, täysi
+# Ominaisuuspohjainen testaus (Property-based testing)
+
+- Syötteitä ei valita käsin, vaan kuvataan ominaisuus, jonka pitää päteä kaikilla syötteillä
 
 ```python
-class Varasto
-    def __init__(self, tilavuus, alku_saldo = 0):
-        self.tilavuus = tilavuus
-        self.saldo = alkusalto
+@given(st.integers(min_value=0, max_value=100),
+       st.integers(min_value=-10, max_value=200))
+def test_ottaminen_ei_hukkaa_tavaraa(alku_saldo, maara):
+    varasto = Varasto(100, alku_saldo)
+    otettu = varasto.ota_varastosta(maara)
 
-    def ota_varastosta(self, maara):
-        if maara < 0:
-            return 0.0
-
-        if maara > self.saldo:
-            kaikki_mita_voidaan = self.saldo
-            self.saldo = 0.0
-            return kaikki_mita_voidaan
-
-        self.saldo = self.saldo - maara
-        return maara
+    assert varasto.saldo >= 0
+    assert otettu + varasto.saldo == alku_saldo
 ```
 
 #
@@ -203,7 +197,7 @@ class Varasto
 
 - Vaiheet, joiden suorittaminen edellytetään, että commitattu koodi saadaan siirrettyä staging/tuotantoympäristöön
 
-![](../ohjelmistotuotanto-hy.github.io/images/3-12.png){ width=400 }
+![](./images/pipeline.png){ width=420 }
 
 # Canary release
 

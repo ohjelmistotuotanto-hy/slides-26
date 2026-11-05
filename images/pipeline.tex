@@ -1,0 +1,34 @@
+\documentclass[border=6pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{ci}{HTML}{2E7D32}
+\definecolor{cdel}{HTML}{1F4E9A}
+\definecolor{cdep}{HTML}{B5306B}
+\begin{document}
+\begin{tikzpicture}[
+  stage/.style={draw,very thick,rounded corners=3pt,minimum width=2.6cm,minimum height=1.9cm,align=center,font=\large,fill=white},
+  arr/.style={-{Stealth[length=7pt]},very thick},
+  zone/.style={draw,dashed,line width=1.4pt,rounded corners=6pt},
+  zl/.style={font=\Large\bfseries,anchor=south east}
+]
+\node[stage] (c) {Commit};
+\node[stage,right=0.7cm of c] (t) {Yksikkö- ja\\integraatiotestit,\\staattinen analyysi};
+\node[stage,right=0.7cm of t] (s) {Vienti\\staging-\\ympäristöön};
+\node[stage,right=0.7cm of s] (h) {Hyväksymis-\\testit};
+\node[stage,right=0.7cm of h] (p) {Vienti\\tuotantoon};
+\foreach \a/\b in {c/t,t/s,s/h,h/p} \draw[arr] (\a) -- (\b);
+% zones
+\path (c.south) ++(0,-0.85) coordinate (z0b);
+\node[zone,draw=ci,fit=(c)(t)(z0b),inner xsep=8pt,inner ysep=6pt] (z1) {};
+\node[zl,text=ci,anchor=south east] at ($(z1.south east)+(-4pt,3pt)$) {Jatkuva integraatio};
+\path (z1.south) ++(0,-0.75) coordinate (z1b);
+\node[zone,draw=cdel,fit=(z1)(h)(z1b),inner xsep=8pt,inner ysep=6pt] (z2) {};
+\node[zl,text=cdel,anchor=south east] at ($(z2.south east)+(-4pt,3pt)$) {Jatkuva toimitusvalmius};
+\path (z2.south) ++(0,-0.75) coordinate (z2b);
+\node[zone,draw=cdep,fit=(z2)(p)(z2b),inner xsep=8pt,inner ysep=6pt] (z3) {};
+\node[zl,text=cdep,anchor=south east] at ($(z3.south east)+(-4pt,3pt)$) {Jatkuva toimittaminen};
+\end{tikzpicture}
+\end{document}
