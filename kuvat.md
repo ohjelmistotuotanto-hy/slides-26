@@ -219,7 +219,7 @@ def test_ottaminen_ei_hukkaa_tavaraa(alku_saldo, maara):
 
 # Mikropalveluarkkitehtuuri
 
-![](../ohjelmistotuotanto-hy.github.io/images/lu8-1.png){ width=250 }
+![](./images/lu8-1.png){ width=250 }
 
 - sovellus koostataan useista (jopa sadoista) pienistä verkossa toimivista autonomisista palveluista 
 
