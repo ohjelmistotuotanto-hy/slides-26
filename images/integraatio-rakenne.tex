@@ -1,0 +1,37 @@
+% ./build-sarja.sh integraatio-rakenne 5
+\providecommand\step{5}
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}\renewcommand\familydefault{\sfdefault}
+\usepackage{amssymb}
+\usetikzlibrary{arrows.meta,positioning,backgrounds,calc}
+\def\mkstep#1{\ifnum\step<#1\relax\tikzset{s#1/.style={opacity=0}}\else\tikzset{s#1/.style={}}\fi}
+\def\done#1{\ifnum\step<#1\relax\tikzset{d#1/.style={draw=gray!70, dashed, fill=white, text=gray!70}}\else\tikzset{d#1/.style={draw=black, solid, fill=gray!25, text=black}}\fi}
+\mkstep{5}\done{2}\done{3}\done{4}
+\begin{document}
+\begin{tikzpicture}[show background rectangle, background rectangle/.style={fill=white}, inner frame sep=6pt,
+  layer/.style={draw, thick, rounded corners=3pt, minimum width=10cm, minimum height=1.5cm},
+  cls/.style={draw, thick, minimum width=2.6cm, minimum height=0.75cm, font=\small},
+  lname/.style={font=\small\bfseries, anchor=east},
+  arr/.style={-{Stealth[length=2.5mm]}, thick}]
+\foreach \y/\n/\d in {4/käyttöliittymä/d4, 2/sovelluslogiikka/d3, 0/tallennus/d2} {
+  \node[layer, \d, fill=none, text=black] at (5,\y) {};
+  \node[lname] at (-0.2,\y) {\n};
+}
+\node[cls, d4] (u1) at (1.8,4) {KauppaView};
+\node[cls, d4] (u2) at (5,4)   {OstoskoriView};
+\node[cls, d4] (u3) at (8.2,4) {MaksuView};
+\node[cls, d3] (l1) at (1.8,2) {Kauppa};
+\node[cls, d3] (l2) at (5,2)   {Ostoskori};
+\node[cls, d3] (l3) at (8.2,2) {Pankki};
+\node[cls, d2] (t1) at (1.8,0) {TuoteRepository};
+\node[cls, d2] (t2) at (5,0)   {OstosRepository};
+\node[cls, d2] (t3) at (8.2,0) {AsiakasRepository};
+\begin{scope}[s5, red!75!black]
+\foreach \a/\b in {u1/l1, u2/l2, u3/l3, l1/t1, l2/t2, l3/t3, u2/l1, l1/l2, l3/l2, l2/t1}
+  \draw[arr] (\a) -- (\b);
+\node[font=\small\bfseries, align=center, anchor=north] at (5,-1) {kaikki integroidaan kerralla vasta lopussa: toimiiko?};
+\end{scope}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,39 @@
+% ./build-sarja.sh integraatio-ominaisuus 4
+\providecommand\step{4}
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}\renewcommand\familydefault{\sfdefault}
+\usepackage{amssymb}
+\usetikzlibrary{arrows.meta,positioning,backgrounds,calc}
+\def\mkstep#1{\ifnum\step<#1\relax\tikzset{s#1/.style={opacity=0}}\else\tikzset{s#1/.style={}}\fi}
+\def\done#1{\ifnum\step<#1\relax\tikzset{d#1/.style={draw=gray!70, dashed, fill=white, text=gray!70}}\else\tikzset{d#1/.style={draw=black, solid, fill=gray!25, text=black}}\fi}
+\mkstep{2}\mkstep{3}\mkstep{4}
+\begin{document}
+\begin{tikzpicture}[show background rectangle, background rectangle/.style={fill=white}, inner frame sep=6pt,
+  layer/.style={draw=gray!70, dashed, thick, rounded corners=3pt, minimum width=10cm, minimum height=1.5cm},
+  lname/.style={font=\small\bfseries, anchor=east},
+  slice/.style={draw=#1!70!black, thick, fill=#1!35, fill opacity=0.4, rounded corners=2pt},
+  sl/.style={font=\small\bfseries, align=center, text=#1!60!black, anchor=south},
+  ok/.style={font=\small\bfseries, text=green!50!black, anchor=north, align=center}]
+\foreach \y/\n in {4/käyttöliittymä, 2/sovelluslogiikka, 0/tallennus} {
+  \node[layer] at (5,\y) {};
+  \node[lname] at (-0.2,\y) {\n};
+}
+\begin{scope}[s2]
+\draw[slice=blue]   (1.0,-0.6) rectangle (2.6,4.6);
+\node[sl=blue] at (1.8,4.8) {lisää tuote\\ostoskoriin};
+\node[ok] at (1.8,-0.8) {\checkmark\ toimii\\päästä päähän};
+\end{scope}
+\begin{scope}[s3]
+\draw[slice=orange] (4.2,-0.6) rectangle (5.8,4.6);
+\node[sl=orange] at (5,4.8) {poista tuote\\korista};
+\node[ok] at (5,-0.8) {\checkmark\ toimii\\päästä päähän};
+\end{scope}
+\begin{scope}[s4]
+\draw[slice=green] (7.4,-0.6) rectangle (9.0,4.6);
+\node[sl=green] at (8.2,4.8) {maksa\\ostokset};
+\node[ok] at (8.2,-0.8) {\checkmark\ toimii\\päästä päähän};
+\end{scope}
+\end{tikzpicture}
+\end{document}

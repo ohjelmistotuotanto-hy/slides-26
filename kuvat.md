@@ -122,6 +122,10 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.11.2026
 
+# Koodin katselmointi: pull requestit
+
+![](./images/pr-prosessi-5.pdf){ width=100% }
+
 # Testauksen tasot
 
 - _Yksikkötestaus_ (unit testing)
@@ -142,12 +146,24 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](./images/v-malli.png){ height=230 }
 
+# Ekvivalenssiluokat ja raja-arvot
+
+![](./images/ekvivalenssi-ika-3.pdf){ width=100% }
+
 
 # Testisyötteiden valinta: palautussovellus
 
 - Mitä testitapauksia kannattaisi valita palautussovelluksen testaamiseen?
 
 ![](./images/submform.png){ width=350 }
+
+# Testisyötteiden valinta: palautussovellus
+
+![](./images/ekvivalenssi-tunnit-2.pdf){ width=95% }
+
+# Mutaatiotestaus
+
+![](./images/mutaatio-4.pdf){ width=100% }
 
 # Ominaisuuspohjainen testaus (Property-based testing)
 
@@ -164,15 +180,17 @@ def test_ottaminen_ei_hukkaa_tavaraa(alku_saldo, maara):
     assert otettu + varasto.saldo == alku_saldo
 ```
 
-#
+# Rakenteeseen perustuva integraatio
 
-- Rakenteeseen perustuva integraatio
+![](./images/integraatio-rakenne-5.pdf){ width=85% }
 
-![](./images/3.png){ width=100 }
+# Ominaisuuksiin perustuva integraatio
 
-- Ominaisuuksiin perustuva integraatio
+![](./images/integraatio-ominaisuus-4.pdf){ width=80% }
 
-![](./images/3b.png){ width=100 }
+# Milloin ensimmäinen toimiva toiminnallisuus?
+
+![](./images/integraatio-aikajana-2.pdf){ width=100% }
 
 #
 

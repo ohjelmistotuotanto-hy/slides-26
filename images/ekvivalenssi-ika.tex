@@ -1,0 +1,51 @@
+% Kuvasarja: for n in 1 2 3; do echo "\\def\\step{$n}\\input{ekvivalenssi-ika.tex}" > ekvivalenssi-ika-$n.tex; tectonic ekvivalenssi-ika-$n.tex; rm ekvivalenssi-ika-$n.tex; done
+\providecommand\step{3}
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}\renewcommand\familydefault{\sfdefault}
+\usetikzlibrary{arrows.meta,backgrounds}
+\def\mkstep#1{\ifnum\step<#1\relax\tikzset{s#1/.style={opacity=0}}\else\tikzset{s#1/.style={}}\fi}
+\mkstep{2}\mkstep{3}
+\begin{document}
+\sffamily
+\begin{tikzpicture}[show background rectangle, background rectangle/.style={fill=white}, inner frame sep=6pt,
+  seg/.style={draw, thick, fill=#1, minimum height=1.1cm, inner sep=0pt},
+  rep/.style={circle, fill=blue!70!black, inner sep=2.2pt},
+  bnd/.style={circle, fill=red!75!black, inner sep=2.2pt},
+  nm/.style={font=\sffamily\small\bfseries, align=center},
+  rg/.style={font=\sffamily\footnotesize, align=center}]
+% luokat: x-koordinaatit
+\def\yy{0}
+\draw[seg=red!15]    (0,0)    rectangle (2,1.1);
+\draw[seg=blue!8]    (2,0)    rectangle (5.5,1.1);
+\draw[seg=green!15]  (5.5,0)  rectangle (9.5,1.1);
+\draw[seg=orange!15] (9.5,0)  rectangle (12.5,1.1);
+\node[nm] at (1,0.72)    {virheellinen};   \node[rg] at (1,0.3)    {alle 0};
+\node[nm] at (3.75,0.72) {alaikäinen};     \node[rg] at (3.75,0.3) {0--17};
+\node[nm] at (7.5,0.72)  {työikäinen};     \node[rg] at (7.5,0.3)  {18--65};
+\node[nm] at (11,0.72)   {eläkeläinen};    \node[rg] at (11,0.3)   {66--};
+\node[font=\sffamily\small\itshape, anchor=east] at (-0.15,0.55) {ikä};
+
+% edustajat (askel 2)
+\begin{scope}[s2]
+\foreach \x/\v in {1/-5, 3.75/10, 7.5/40, 11/80} {
+  \draw[thick, blue!70!black] (\x,0) -- (\x,-0.45);
+  \node[rep] at (\x,-0.45) {};
+  \node[font=\sffamily\small\bfseries, text=blue!70!black, below] at (\x,-0.55) {\v};
+}
+\node[font=\sffamily\footnotesize\itshape, text=blue!70!black, anchor=east] at (-0.15,-0.75) {yksi / luokka};
+\end{scope}
+
+% raja-arvot (askel 3)
+\begin{scope}[s3]
+\foreach \b/\l/\r in {2/-1/0, 5.5/17/18, 9.5/65/66} {
+  \draw[very thick, red!75!black] (\b,-0.1) -- (\b,1.75);
+  \node[bnd] at (\b-0.35,1.45) {}; \node[bnd] at (\b+0.35,1.45) {};
+  \node[font=\sffamily\small\bfseries, text=red!75!black] at (\b-0.42,1.95) {\l};
+  \node[font=\sffamily\small\bfseries, text=red!75!black] at (\b+0.42,1.95) {\r};
+}
+\node[font=\sffamily\footnotesize\itshape, text=red!75!black, anchor=east] at (-0.15,1.7) {raja-arvot};
+\end{scope}
+\end{tikzpicture}
+\end{document}

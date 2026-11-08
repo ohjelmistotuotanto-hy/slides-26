@@ -1,0 +1,31 @@
+% Kuvasarja: kaannetaan askeleet 1-5 komennolla
+%   for n in 1 2 3 4 5; do echo "\\def\\step{$n}\\input{pr-prosessi.tex}" > pr-prosessi-$n.tex; tectonic pr-prosessi-$n.tex; rm pr-prosessi-$n.tex; done
+\providecommand\step{5}
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usetikzlibrary{arrows.meta,positioning,backgrounds}
+% sN = nakyvissa askeleesta N alkaen; piilotetut elementit pitavat kuvan koon samana
+\def\mkstep#1{\ifnum\step<#1\relax\tikzset{s#1/.style={opacity=0}}\else\tikzset{s#1/.style={}}\fi}
+\mkstep{2}\mkstep{3}\mkstep{4}\mkstep{5}
+\begin{document}
+\sffamily
+\begin{tikzpicture}[show background rectangle, background rectangle/.style={fill=white}, inner frame sep=6pt,
+  box/.style={draw, rounded corners=3pt, thick, fill=#1, align=center,
+              minimum height=1.6cm, text width=3.1cm, font=\small},
+  box/.default=blue!8,
+  arr/.style={-{Stealth[length=3mm]}, thick},
+  lbl/.style={font=\footnotesize\itshape, align=center}
+]
+\node[box]                     (dev)    {\textbf{Kehittäjä}\\muutokset omaan haaraan\\{\footnotesize(open source: forkkiin)}};
+\node[box, s2, right=1.1cm of dev] (pr)     {\textbf{Pull request}\\avataan haarasta};
+\node[box=orange!15, s3, right=1.1cm of pr] (review) {\textbf{Katselmointi}\\esim. \emph{senior developer}};
+\node[box=green!15, s5, right=1.7cm of review] (merge) {\textbf{Merge}\\päärepositorioon};
+
+\draw[arr, s2] (dev) -- (pr);
+\draw[arr, s3] (pr) -- (review);
+\draw[arr, s5] (review) -- node[lbl, above] {hyväksytty} (merge);
+\draw[arr, s4, red!70!black] (review.south) -- ++(0,-0.9) coordinate (r1) -- node[lbl, below, text=red!70!black] {ei riittävän hyvä: parannusehdotuksia} (r1 -| dev.south) -- (dev.south);
+\end{tikzpicture}
+\end{document}
