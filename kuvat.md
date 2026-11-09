@@ -165,21 +165,6 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](./images/mutaatio-4.pdf){ width=100% }
 
-# Ominaisuuspohjainen testaus (Property-based testing)
-
-- Syötteitä ei valita käsin, vaan kuvataan ominaisuus, jonka pitää päteä kaikilla syötteillä
-
-```python
-@given(st.integers(min_value=0, max_value=100),
-       st.integers(min_value=-10, max_value=200))
-def test_ottaminen_ei_hukkaa_tavaraa(alku_saldo, maara):
-    varasto = Varasto(100, alku_saldo)
-    otettu = varasto.ota_varastosta(maara)
-
-    assert varasto.saldo >= 0
-    assert otettu + varasto.saldo == alku_saldo
-```
-
 # Rakenteeseen perustuva integraatio
 
 ![](./images/integraatio-rakenne-5.pdf){ width=85% }
