@@ -218,11 +218,11 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 - _Kerros_ on kokoelma toisiinsa liittyviä olioita, jotka muodostavat toiminnallisuuden suhteen loogisen kokonaisuuden
 
-![](../ohjelmistotuotanto-hy.github.io/images/4-1.png){ width=200 }
+![](./images/kerrosarkkitehtuuri.png){ width=250 }
 
 # Mikropalveluarkkitehtuuri
 
-![](./images/lu8-1.png){ width=250 }
+![](./images/mikropalvelut.png){ width=400 }
 
 - sovellus koostataan useista (jopa sadoista) pienistä verkossa toimivista autonomisista palveluista 
 
