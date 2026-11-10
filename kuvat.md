@@ -187,18 +187,18 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](../ohjelmistotuotanto-hy.github.io/images/lu3-4.png){ width=340 }
 
-1. Kirjoitetaan sen verran testiä että testi ei mene läpi
-2. Kirjoitetaan koodia sen verran, että testi menee läpi
-3. Jos huomataan koodin rakenteen menneen huonoksi refaktoroidaan koodin rakenne paremmaksi
+1. Kirjoitetaan testi, joka ei mene läpi
+2. Kirjoitetaan koodia sen verran, että testi menee läpi
+3. Jos huomataan koodin rakenteen menneen huonoksi, refaktoroidaan
 4. Jatketaan askeleesta 1
 
-# Testit asiakkan kielellä
+# Testit asiakkaan kielellä
 
 ![](images/robot1.png){ width=400 }
 
 # Deployment pipeline
 
-- Vaiheet, joiden suorittaminen edellytetään, että commitattu koodi saadaan siirrettyä staging/tuotantoympäristöön
+- Vaiheet, joiden läpikäymistä edellytetään, jotta commitattu koodi saadaan siirrettyä staging/tuotantoympäristöön
 
 ![](./images/pipeline.png){ width=420 }
 
@@ -206,7 +206,7 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 - Kaksi rinnakkaista tuotantoympäristöä, joista uudet ominaisuudet viedään toiseen
 
-![](./images/canary.png){ width=400 }
+![](./images/canary-fi.png){ width=400 }
 
 #
 
