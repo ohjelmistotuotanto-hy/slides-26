@@ -6,13 +6,13 @@
 
 # Ohjelmiston elinkaari (software lifecycle)
 
-Riippumatta tyylistä ja tavasta, jolla ohjelmisto tehdään, käy ohjelmisto läpi seuraavat _vaiheet_
+Riippumatta tyylistä ja tavasta, jolla ohjelmisto tehdään, käy ohjelmisto läpi seuraavat _vaiheet_
 
-- Vaatimusten analysointi ja määrittely
+- Vaatimusten analysointi ja määrittely
 - Suunnittelu
 - Toteutus
 - Testaus
-- Ohjelmiston ylläpito ja evoluutio
+- Ohjelmiston ylläpito ja evoluutio
 
 Vaiheista muodostuu ohjelmiston "elinkaari"
 
@@ -52,13 +52,13 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 # Ohjelmiston elinkaari (software lifecycle)
 
-- **Vaatimusten analysointi ja määrittely**
+- **Vaatimusten analysointi ja määrittely**
 - Suunnittelu
 - Toteutus
 - Testaus
-- Ohjelmiston ylläpito ja evoluutio
+- Ohjelmiston ylläpito ja evoluutio
 
-# Vaatimusmäärittely 2010-luvulla: Lean startup
+# Vaatimusmäärittely 2010-luvulla: Lean startup
 
 ![](./images/mvp.png){ width=250 }
 
@@ -128,19 +128,19 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 # Testauksen tasot
 
-- _Yksikkötestaus_ (unit testing)
-  - Yksittäisten luokkien, metodien ja moduulien testaus erillään muusta kokonaisuudesta
+- _Yksikkötestaus_ (unit testing)
+  - Yksittäisten luokkien, metodien ja moduulien testaus erillään muusta kokonaisuudesta
 
 - _Integraatiotestaus_ (integration testing)
-  - Yksittäin testattujen komponenttien liittäminen yhteen eli integrointi ja kokonaisuuden testaus
+  - Yksittäin testattujen komponenttien liittäminen yhteen eli integrointi ja kokonaisuuden testaus
 
-- _Järjestelmätestaus_ (system testing)
+- _Järjestelmätestaus_ (system testing)
   - Toimiiko ohjelmisto vaatimuksiin kirjatulla tavalla?
   - Tutkii järjestelmää kokonaisuudessaan: _end to end -testaus_
   - Jakautuu useisiin alalajeihin
 
-- _Käyttäjän hyväksymistestaus_ (user acceptance testing)
-  - Loppukäyttäjän tuotteelle suorittama testaus
+- _Käyttäjän hyväksymistestaus_ (user acceptance testing)
+  - Loppukäyttäjän tuotteelle suorittama testaus
 
 # "V-malli"
 
@@ -151,9 +151,9 @@ Winston W. Royce: Management of the development of Large Software, 1970
 ![](./images/ekvivalenssi-ika-3.pdf){ width=100% }
 
 
-# Testisyötteiden valinta: palautussovellus
+# Testisyötteiden valinta: palautussovellus
 
-- Mitä testitapauksia kannattaisi valita palautussovelluksen testaamiseen?
+- Mitä testitapauksia kannattaisi valita palautussovelluksen testaamiseen?
 
 ![](./images/submform.png){ width=350 }
 
@@ -204,7 +204,7 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 # Canary release
 
-- Kaksi rinnakkaista tuotantoympäristöä, joista uudet ominaisuudet viedään toiseen
+- Uusi versio viedään vanhan rinnalle omaan tuotantoympäristöönsä
 
 ![](./images/canary-fi.png){ width=400 }
 
@@ -214,9 +214,17 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16.11.2026
 
+# Feature branchit
+
+![](./images/feature-branch4.png){ width=400 }
+
+# Trunk based development
+
+![](./images/tbd-2.png){ width=400 }
+
 # Kerrosarkkitehtuuri 
 
-- _Kerros_ on kokoelma toisiinsa liittyviä olioita, jotka muodostavat toiminnallisuuden suhteen loogisen kokonaisuuden
+- _Kerros_ on kokoelma toisiinsa liittyviä olioita, jotka muodostavat toiminnallisuuden suhteen loogisen kokonaisuuden
 
 ![](./images/kerrosarkkitehtuuri.png){ width=250 }
 
@@ -224,7 +232,7 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](./images/mikropalvelut.png){ width=400 }
 
-- sovellus koostataan useista (jopa sadoista) pienistä verkossa toimivista autonomisista palveluista 
+- sovellus koostataan useista (jopa sadoista) pienistä verkossa toimivista autonomisista palveluista 
 
 #
 
@@ -232,6 +240,18 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17.11.2026
 
+# C4-malli: konteksti
+
+![](./images/c4-konteksti.png){ width=400 }
+
+# C4-malli: containerit
+
+![](./images/c4-containerit.png){ width=400 }
+
+# C4-malli: komponentit
+
+![](./images/c4-komponentit.png){ width=330 }
+
 # Laadukkaan koodin tuntomerkkejä
 
 - Laadukkaalla koodilla joukko yhteneviä ominaisuuksia, tai _laatuattribuutteja_, esim. seuraavat:
@@ -241,30 +261,21 @@ Winston W. Royce: Management of the development of Large Software, 1970
   - toisteettomuus
   - testattavuus
   - selkeys
+  - yksinkertaisuus
 
 # Koheesio Flask-sovelluksessa
 
 ![](./images/srp2.png){ width=400 }
 
-# Laadukkaan koodin tuntomerkkejä
+# Vibe-koodaus ja velka
 
-- Laadukkaalla koodilla joukko yhteneviä ominaisuuksia, tai _laatuattribuutteja_, esim. seuraavat:
-  - kapselointi
-  - korkea koheesion aste
-  - riippuvuuksien vähäisyys 
-  - toisteettomuus
-  - testattavuus
-  - selkeys
-
-# Vibe-koodaus
-
-. . . 
-
-- teknisen velan määrän kasvu
+- Vibe-koodaus: agentin koodi hyväksytään sitä lukematta, kunhan se näyttää toimivan
 
 . . .
 
-- oppimisvelka
+- Seurauksena kahdenlaista velkaa
+  - tekninen velka: copypastea, turhia abstraktioita, refaktoroimatonta koodia
+  - kognitiivinen velka: tiimi ylläpitää koodia, jota kukaan ei ymmärrä
 
 #
 
@@ -276,7 +287,7 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](../ohjelmistotuotanto-hy.github.io/images/5-1.png){ width=300 }
 
-# Perimmäisen syyn analyysi: five whys
+# Perimmäisen syyn analyysi: five whys
 
 ![](./images/5why.png){ width=400 }
 
