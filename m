@@ -16,6 +16,7 @@ run 5
 run 6
 run 7
 run 8
+run 9
 run k
 
 if [ -n "$ignored" ]; then
