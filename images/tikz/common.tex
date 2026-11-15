@@ -1,0 +1,20 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\usetikzlibrary{shapes.geometric,shadows,arrows.meta,positioning,fit,backgrounds,calc}
+\definecolor{nblue}{HTML}{1F4E79}
+\definecolor{nfill}{HTML}{EAF1F8}
+\definecolor{ofill}{HTML}{FFF4E0}
+\definecolor{oline}{HTML}{C87800}
+\definecolor{gfill}{HTML}{F2F2F2}
+\definecolor{hl}{HTML}{D6336C}
+\tikzset{
+  box/.style={draw=nblue,fill=nfill,rounded corners=2pt,minimum width=2.6cm,minimum height=0.85cm,align=center,font=\small},
+  ext/.style={draw=gray!70,fill=gfill,rounded corners=2pt,minimum width=2.6cm,minimum height=0.85cm,align=center,font=\small},
+  db/.style={cylinder,shape border rotate=90,aspect=0.25,draw=nblue,fill=nfill,minimum width=1.9cm,minimum height=1.1cm,align=center,font=\small},
+  arr/.style={-{Stealth[length=2.2mm]},thick,nblue!80!black},
+  lbl/.style={font=\scriptsize,fill=white,inner sep=1pt,text=black!75},
+  grp/.style={draw=gray!60,dashed,rounded corners=4pt,inner sep=8pt},
+  grplbl/.style={font=\small\bfseries,text=gray!40!black,anchor=north west},
+}

@@ -1,0 +1,24 @@
+\input{common.tex}
+\begin{document}
+\begin{tikzpicture}[msg/.style={draw=oline,fill=ofill,minimum width=0.35cm,minimum height=0.3cm,inner sep=0pt}]
+\node[ext,minimum width=2.4cm] (sisu) at (0,4.6) {SISU};
+\node[box,minimum width=2.4cm] (fetch) at (0,3.2) {Fetcher};
+% queue
+\node[draw=oline,fill=white,thick,minimum width=3.4cm,minimum height=0.9cm,rounded corners=2pt] (q) at (0,1.5) {};
+\foreach \i in {0,...,4} \node[msg] at ($(q.west)+(0.45+\i*0.62,0)$) {};
+\node[font=\small\bfseries,left=4pt of q,align=right] {BullMQ\\viestijono};
+\node[box,minimum width=2cm] (w1) at (-2.4,-0.3) {Worker};
+\node[box,minimum width=2cm] (w2) at (0,-0.3) {Worker};
+\node[box,minimum width=2cm] (w3) at (2.4,-0.3) {Worker};
+\node[db] (db) at (0,-2.1) {Tietokanta};
+\node[box,minimum width=2.2cm] (api) at (3.4,-2.1) {Importer API};
+\draw[arr] (sisu) -- node[lbl,right] {data} (fetch);
+\draw[arr] (fetch) -- node[lbl,right] {julkaisee} (q);
+\foreach \w in {w1,w2,w3} {\draw[arr] (q.south) -- (\w.north); \draw[arr] (\w.south) -- (db.north);}
+\draw[arr] (api) -- node[lbl,above] {lukee} (db);
+\node[font=\small,text=gray!30!black,align=left,anchor=west,text width=4.6cm] at (4.9,1.2)
+ {\raggedright\hyphenpenalty=10000 $\bullet$ Fetcher ei tiedä, kuka viestit käsittelee\\[3pt]
+  $\bullet$ jono tasaa kuormaa: Workereita voi lisätä tarpeen mukaan\\[3pt]
+  $\bullet$ jos Worker kaatuu, viesti jää jonoon odottamaan};
+\end{tikzpicture}
+\end{document}

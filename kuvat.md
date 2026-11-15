@@ -234,6 +234,25 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 - sovellus koostataan useista (jopa sadoista) pienistä verkossa toimivista autonomisista palveluista 
 
+# Ketterän testauksen nelikenttä
+
+![](./images/nelikentta.png){ width=330 }
+
+- Brian Marick 2003, Lisa Crispin ja Janet Gregory: Agile Testing ja More Agile Testing
+
+# Testauspyramidi
+
+![](./images/testauspyramidi.png){ width=380 }
+
+- Mike Cohn: pääosa testeistä yksikkötestejä, end to end -testejä mahdollisimman vähän
+
+# Pyramidi, pokaali ja kenno
+
+![](./images/pyramidi-pokaali-kenno.png){ width=400 }
+
+- Pokaalissa (Kent C. Dodds) ja kennossa (Spotify) painopiste integraatiotesteissä
+- Yhtä totuutta ei ole
+
 #
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luento 8

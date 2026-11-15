@@ -1,0 +1,22 @@
+\input{common.tex}
+\begin{document}
+\begin{tikzpicture}[layer/.style={draw=nblue,fill=nfill,rounded corners=3pt,minimum width=8.4cm,minimum height=1.25cm,align=center,font=\normalsize},
+ side/.style={font=\small\bfseries,text=nblue,anchor=east,align=right}]
+\node[ext,minimum width=3cm] (user) at (0,2.1) {Käyttäjä (selain)};
+\node[layer] (ui) at (0,0.5) {UI (SPA)};
+\node[layer,fill=gfill,draw=gray!70,minimum height=0.6cm,font=\small] (shib) at (0,-0.85) {Shibboleth: kirjautuminen};
+\node[layer] (back) at (0,-2.2) {Norppa backend\\[-1pt]{\small REST-rajapinta, sovelluslogiikka}};
+\node[layer,fill=none,draw=nblue,minimum height=1.6cm] (data) at (0,-4.1) {};
+\node[db] (db) at (-1.6,-4.1) {Tietokanta};
+\node[db] (redis) at (1.8,-4.1) {Redis\\[-2pt]\scriptsize välimuisti};
+\node[side] at (-4.5,0.5) {Esitys};
+\node[side] at (-4.5,-2.2) {Sovellus-\\logiikka};
+\node[side] at (-4.5,-4.1) {Tieto};
+\draw[arr] (user) -- (ui);
+\draw[arr] (ui) -- (shib);
+\draw[arr] (shib) -- (back);
+\draw[arr] (back.south -| db) -- (db);
+\draw[arr] (back.south -| redis) -- (redis);
+\draw[arr,gray] (5.2,1) -- node[lbl,right,align=left,text=gray!30!black] {kerros käyttää\\vain alempaa\\kerrosta} (5.2,-4.6);
+\end{tikzpicture}
+\end{document}

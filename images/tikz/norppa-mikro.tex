@@ -1,0 +1,28 @@
+\input{common.tex}
+\begin{document}
+\begin{tikzpicture}[svc/.style={box,minimum width=2.7cm,minimum height=1cm,font=\small\bfseries},
+  sdb/.style={db,minimum width=1.4cm,minimum height=0.8cm,font=\scriptsize}]
+\node[ext] (user) at (0,1.6) {Käyttäjä};
+\node[svc] (norppa) at (0,0) {Norppa\\[-2pt]\scriptsize\mdseries UI + backend};
+\node[sdb] (ndb) at (0,-1.6) {DB};
+\node[svc] (upd) at (3.5,-1.6) {Updater};
+\node[svc] (jami) at (-3.6,0.75) {jami\\[-2pt]\scriptsize\mdseries käyttöoikeudet};
+\node[svc] (pate) at (-3.6,-0.75) {pate\\[-2pt]\scriptsize\mdseries sähköpostit};
+\node[ext] (gw) at (7,-1.6) {API Gateway};
+\node[ext] (other) at (7,-3.1) {Muut sovellukset};
+\node[svc] (imp) at (10.5,-1.6) {Importer};
+\node[sdb] (idb) at (10.5,-3.2) {DB};
+\node[ext] (sisu) at (10.5,0) {SISU};
+\draw[arr] (user) -- (norppa);
+\draw[arr] (norppa) -- (ndb);
+\draw[arr] (norppa.west) -- (jami.east);
+\draw[arr] (norppa.west) -- (pate.east);
+\draw[arr] (upd) -- (ndb);
+\draw[arr] (upd) -- (gw);
+\draw[arr] (other) -- (gw);
+\draw[arr] (gw) -- (imp);
+\draw[arr] (imp) -- (idb);
+\draw[arr] (imp) -- (sisu);
+\node[font=\scriptsize,text=gray!30!black,align=center] at (3.5,0.9) {jokainen palvelu oma sovelluksensa,\\ julkaistaan ja skaalataan erikseen};
+\end{tikzpicture}
+\end{document}

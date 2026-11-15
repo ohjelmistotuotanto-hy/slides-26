@@ -1,0 +1,45 @@
+\input{common.tex}
+\begin{document}
+\begin{tikzpicture}
+% Norppa
+\node[ext] (user) at (2,1.3) {Käyttäjä (selain)};
+\node[box] (ui) at (2,0) {UI (SPA)};
+\node[ext,minimum height=0.6cm] (shib) at (2,-1.2) {Shibboleth (kirjautuminen)};
+\node[box] (back) at (2,-2.5) {Norppa backend};
+\node[db] (redis) at (5.6,-2.5) {Redis};
+\node[db] (ndb) at (2,-4.3) {Tietokanta};
+\node[box] (upd) at (5.6,-4.3) {Updater};
+\draw[arr] (user) -- (ui);
+\draw[arr] (ui) -- node[lbl,right] {JSON} (shib);
+\draw[arr] (shib) -- (back);
+\draw[arr] (back) -- node[lbl,above] {välimuisti} (redis);
+\draw[arr] (back) -- node[lbl,right] {lukee/kirjoittaa} (ndb);
+\draw[arr] (upd) -- node[lbl,above] {kirjoittaa} (ndb);
+\begin{scope}[on background layer]
+\node[grp,fit=(ui)(back)(redis)(ndb)(upd)(shib),inner ysep=14pt] (gn) {};
+\end{scope}
+\node[grplbl] at (gn.north west) {Norppa};
+% keski
+\node[ext] (gw) at (8.6,-6) {API Gateway};
+\node[ext] (other) at (8.6,-7.4) {Muut sovellukset};
+\draw[arr] (upd) |- node[lbl,pos=0.3,left] {hakee kaiken yöllä} (gw);
+\draw[arr] (other) -- (gw);
+% Importer
+\node[ext] (sisu) at (12.5,1.3) {SISU export API};
+\node[box] (fetch) at (12.5,0) {Importer Fetcher};
+\node[box] (nats) at (12.5,-1.4) {BullMQ (viestijono)};
+\node[box,double copy shadow={shadow xshift=-3pt,shadow yshift=3pt}] (work) at (12.5,-2.8) {Worker};
+\node[db] (idb) at (12.5,-4.4) {Tietokanta};
+\node[box] (iapi) at (12.5,-6) {Importer API};
+\draw[arr] (fetch) -- node[lbl,right] {hakee tunnin välein} (sisu);
+\draw[arr] (fetch) -- node[lbl,right] {julkaisee} (nats);
+\draw[arr] (work) -- node[lbl,right,pos=0.75,xshift=4pt] {tilaa} (nats);
+\draw[arr] (work) -- node[lbl,right] {kirjoittaa} (idb);
+\draw[arr] (iapi) -- node[lbl,right] {lukee} (idb);
+\draw[arr] (gw) -- (iapi);
+\begin{scope}[on background layer]
+\node[grp,fit=(fetch)(nats)(work)(idb)(iapi),inner ysep=14pt,inner xsep=30pt] (gi) {};
+\end{scope}
+\node[grplbl] at (gi.north west) {Importer};
+\end{tikzpicture}
+\end{document}
