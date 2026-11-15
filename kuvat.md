@@ -234,24 +234,21 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 - sovellus koostataan useista (jopa sadoista) pienistä verkossa toimivista autonomisista palveluista 
 
-# Ketterän testauksen nelikenttä
+# Kurssipalautejärjestelmä Norppa
 
-![](./images/nelikentta.png){ width=330 }
+![](./images/norppa-yleis.pdf){ width=100% }
 
-- Brian Marick 2003, Lisa Crispin ja Janet Gregory: Agile Testing ja More Agile Testing
+# Norppa: kerrosarkkitehtuuri
 
-# Testauspyramidi
+![](./images/norppa-kerros.pdf){ width=85% }
 
-![](./images/testauspyramidi.png){ width=380 }
+# Norppa: mikropalvelut
 
-- Mike Cohn: pääosa testeistä yksikkötestejä, end to end -testejä mahdollisimman vähän
+![](./images/norppa-mikro.pdf){ width=100% }
 
-# Pyramidi, pokaali ja kenno
+# Norppa: viestipohjainen (event driven) Importer
 
-![](./images/pyramidi-pokaali-kenno.png){ width=400 }
-
-- Pokaalissa (Kent C. Dodds) ja kennossa (Spotify) painopiste integraatiotesteissä
-- Yhtä totuutta ei ole
+![](./images/norppa-event.pdf){ width=100% }
 
 #
 
