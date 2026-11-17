@@ -281,7 +281,31 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 # Koheesio Flask-sovelluksessa
 
-![](./images/srp2.png){ width=400 }
+\fontsize{6.5}{7.7}\selectfont
+
+```python
+@app.route("/create_todo", methods=["POST"])
+def todo_creation():
+    content = request.form.get("content")
+    try:
+        if len(content) < 5:
+            raise UserInputError("Todo content length must be greater than 4")
+        if len(content) > 100:
+            raise UserInputError("Todo content length must be smaller than 100")
+
+        sql = text("INSERT INTO todos (content) VALUES (:content)")
+        db.session.execute(sql, {"content": content})
+        db.session.commit()
+
+        return redirect("/")
+    except Exception as error:
+        flash(str(error))
+        return redirect("/new_todo")
+```
+
+\normalsize
+
+- Huono koheesio: sama funktio käsittelee HTTP-pyynnön, validoi syötteen ja tekee tietokantaoperaatiot
 
 # Vibe-koodaus ja velka
 
