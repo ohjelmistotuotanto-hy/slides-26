@@ -113,9 +113,6 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](./images/scrumban-5.png){ width=400 }
 
-
-#
-
 #
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luento 5
@@ -222,7 +219,7 @@ Winston W. Royce: Management of the development of Large Software, 1970
 
 ![](./images/tbd-2.png){ width=400 }
 
-# Kerrosarkkitehtuuri 
+# Kerrosarkkitehtuuri
 
 - _Kerros_ on kokoelma toisiinsa liittyviä olioita, jotka muodostavat toiminnallisuuden suhteen loogisen kokonaisuuden
 
@@ -327,9 +324,21 @@ def todo_creation():
 
 ![](../ohjelmistotuotanto-hy.github.io/images/5-1.png){ width=300 }
 
+# Value stream mapping
+
+![](../ohjelmistotuotanto-hy.github.io/images/5-2.png){ width=400 }
+
 # Perimmäisen syyn analyysi: five whys
 
 ![](./images/5why.png){ width=400 }
+
+# Kanban ohjelmistokehityksessä
+
+![](../ohjelmistotuotanto-hy.github.io/images/5-kanban-taulu.png){ width=260 }
+
+# Level the work: miksi vaihtelu haittaa?
+
+![](../ohjelmistotuotanto-hy.github.io/images/5-jono.png){ width=250 }
 
 #
 
