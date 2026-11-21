@@ -354,13 +354,25 @@ def todo_creation():
 
 ![](./images/safe-artif.png){ width=450 }
 
+# SAFe: backlogit
+
+![](../ohjelmistotuotanto-hy.github.io/images/5-safe-backlogit.png){ width=400 }
+
 # LeSS
 
 ![](../ohjelmistotuotanto-hy.github.io/images/5-6.png){ width=430 }
 
 # Spotifyn malli
 
-![](../ohjelmistotuotanto-hy.github.io/images/5-17.png){ width=350 }
+![](../ohjelmistotuotanto-hy.github.io/images/5-spotify-yleiskuva.png){ width=350 }
+
+# Team Topologies
+
+![](../ohjelmistotuotanto-hy.github.io/images/5-team-topologies.png){ width=330 }
+
+# Projektien onnistuminen koon mukaan (Chaos 2020)
+
+![](../ohjelmistotuotanto-hy.github.io/images/5-chaos-koko.png){ width=330 }
 
 # Tekniset käytänteet
 
