@@ -322,23 +322,39 @@ def todo_creation():
 
 # Lean thinking house
 
-![](../ohjelmistotuotanto-hy.github.io/images/5-1.png){ width=300 }
+![](./images/lean-talo.png){ height=85% }
 
 # Value stream mapping
 
-![](../ohjelmistotuotanto-hy.github.io/images/5-2.png){ width=400 }
+![](../ohjelmistotuotanto-hy.github.io/images/5-2.png){ width=100% }
 
 # Perimmäisen syyn analyysi: five whys
 
-![](./images/5why.png){ width=400 }
+![](./images/5why.png){ width=100% }
 
 # Kanban ohjelmistokehityksessä
 
+![](./images/kanban-taulu-ei-wip.png){ width=260 }
+
+# Kanban ohjelmistokehityksessä: WIP-rajat
+
 ![](../ohjelmistotuotanto-hy.github.io/images/5-kanban-taulu.png){ width=260 }
+
+# Kanban: WIP-rajojen pienentäminen
+
+![](./images/kanban-taulu-pieni-wip.png){ width=260 }
+
+# Kanban: WIP-rajojen pienentäminen
+
+![](./images/kanban-taulu-wip-1.png){ width=260 }
 
 # Level the work: miksi vaihtelu haittaa?
 
-![](../ohjelmistotuotanto-hy.github.io/images/5-jono.png){ width=250 }
+![](../ohjelmistotuotanto-hy.github.io/images/5-jono.png){ height=88% }
+
+# Lean-tuotekehitys: set based concurrent development
+
+![](./images/set-based-4.png){ width=85% }
 
 #
 

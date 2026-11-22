@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="700" viewBox="0 0 1140 700" font-family="Helvetica, Arial, sans-serif">
+<rect width="1140" height="700" fill="#fff"/>
+<text x="130" y="140" font-size="25" font-weight="bold" fill="#2d3748" text-anchor="middle">Backlog</text>
+<rect x="39" y="227" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="32" y="220" width="196" height="120" rx="8" fill="#d6c6f5" stroke="#2d3748" stroke-width="2.5"/>
+<text x="130" y="274" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Tuote-</text>
+<text x="130" y="300" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">arvostelut</text>
+<rect x="39" y="377" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="32" y="370" width="196" height="120" rx="8" fill="#ffd0a8" stroke="#2d3748" stroke-width="2.5"/>
+<text x="130" y="424" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Lahja-</text>
+<text x="130" y="450" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">kortit</text>
+<text x="350" y="140" font-size="25" font-weight="bold" fill="#2d3748" text-anchor="middle">Analysis</text>
+<rect x="259" y="227" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="252" y="220" width="196" height="120" rx="8" fill="#bfeccb" stroke="#2d3748" stroke-width="2.5"/>
+<text x="350" y="274" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Tilaus-</text>
+<text x="350" y="300" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">historia</text>
+<rect x="259" y="377" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="252" y="370" width="196" height="120" rx="8" fill="#fde2c4" stroke="#2d3748" stroke-width="2.5"/>
+<text x="350" y="424" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Toive-</text>
+<text x="350" y="450" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">lista</text>
+<rect x="259" y="527" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="252" y="520" width="196" height="120" rx="8" fill="#d0e8ff" stroke="#2d3748" stroke-width="2.5"/>
+<text x="350" y="574" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Tuote-</text>
+<text x="350" y="600" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">vertailu</text>
+<text x="570" y="140" font-size="25" font-weight="bold" fill="#2d3748" text-anchor="middle">Development</text>
+<rect x="479" y="227" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="472" y="220" width="196" height="120" rx="8" fill="#fae3a0" stroke="#2d3748" stroke-width="2.5"/>
+<text x="570" y="252" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Ostoskorin</text>
+<text x="570" y="277" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">maksaminen</text>
+<rect x="479" y="309" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="472" y="302" width="196" height="120" rx="8" fill="#f8b4c8" stroke="#2d3748" stroke-width="2.5"/>
+<text x="570" y="334" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Kirjautu-</text>
+<text x="570" y="359" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">minen</text>
+<rect x="479" y="392" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="472" y="385" width="196" height="120" rx="8" fill="#e0f5a8" stroke="#2d3748" stroke-width="2.5"/>
+<text x="570" y="429" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Haku</text>
+<rect x="479" y="475" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="472" y="468" width="196" height="120" rx="8" fill="#ffe0e9" stroke="#2d3748" stroke-width="2.5"/>
+<text x="570" y="500" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Alennus-</text>
+<text x="570" y="525" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">koodit</text>
+<rect x="479" y="557" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="472" y="550" width="196" height="120" rx="8" fill="#e6f0c0" stroke="#2d3748" stroke-width="2.5"/>
+<text x="570" y="604" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Uutis-</text>
+<text x="570" y="630" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">kirje</text>
+<text x="790" y="140" font-size="25" font-weight="bold" fill="#2d3748" text-anchor="middle">Test</text>
+<rect x="699" y="227" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="692" y="220" width="196" height="120" rx="8" fill="#c4c8fa" stroke="#2d3748" stroke-width="2.5"/>
+<text x="790" y="252" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Tuote-</text>
+<text x="790" y="277" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">kuvat</text>
+<rect x="699" y="337" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="692" y="330" width="196" height="120" rx="8" fill="#a8d8f5" stroke="#2d3748" stroke-width="2.5"/>
+<text x="790" y="362" font-size="20" font-weight="bold" fill="#2d3748" text-anchor="middle">Toimitustavan</text>
+<text x="790" y="387" font-size="20" font-weight="bold" fill="#2d3748" text-anchor="middle">valinta</text>
+<rect x="699" y="447" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="692" y="440" width="196" height="120" rx="8" fill="#e2d6f8" stroke="#2d3748" stroke-width="2.5"/>
+<text x="790" y="472" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Varasto-</text>
+<text x="790" y="497" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">saldot</text>
+<rect x="699" y="557" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="692" y="550" width="196" height="120" rx="8" fill="#c8f0e6" stroke="#2d3748" stroke-width="2.5"/>
+<text x="790" y="617" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Palautukset</text>
+<text x="1010" y="140" font-size="25" font-weight="bold" fill="#2d3748" text-anchor="middle">Done</text>
+<rect x="919" y="227" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="912" y="220" width="196" height="120" rx="8" fill="#f5c8ee" stroke="#2d3748" stroke-width="2.5"/>
+<text x="1010" y="274" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">Tuotteiden</text>
+<text x="1010" y="300" font-size="22" font-weight="bold" fill="#2d3748" text-anchor="middle">selaaminen</text>
+<rect x="919" y="377" width="196" height="120" rx="8" fill="#1a202c"/>
+<rect x="912" y="370" width="196" height="120" rx="8" fill="#86e6d6" stroke="#2d3748" stroke-width="2.5"/>
+<text x="1010" y="424" font-size="20" font-weight="bold" fill="#2d3748" text-anchor="middle">Asiakastilin</text>
+<text x="1010" y="450" font-size="20" font-weight="bold" fill="#2d3748" text-anchor="middle">luominen</text>
+<circle cx="130" cy="540" r="4" fill="#2d3748"/>
+<circle cx="130" cy="558" r="4" fill="#2d3748"/>
+<circle cx="130" cy="576" r="4" fill="#2d3748"/>
+<line x1="20" y1="192" x2="1120" y2="192" stroke="#2d3748" stroke-width="3"/>
+<line x1="240" y1="100" x2="240" y2="680" stroke="#2d3748" stroke-width="3"/>
+<line x1="460" y1="100" x2="460" y2="680" stroke="#2d3748" stroke-width="3"/>
+<line x1="680" y1="100" x2="680" y2="680" stroke="#2d3748" stroke-width="3"/>
+<line x1="900" y1="100" x2="900" y2="680" stroke="#2d3748" stroke-width="3"/>
+</svg>
