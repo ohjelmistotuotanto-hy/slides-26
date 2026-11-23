@@ -332,22 +332,6 @@ def todo_creation():
 
 ![](./images/5why.png){ width=100% }
 
-# Kanban ohjelmistokehityksessä
-
-![](./images/kanban-taulu-ei-wip.png){ width=260 }
-
-# Kanban ohjelmistokehityksessä: WIP-rajat
-
-![](../ohjelmistotuotanto-hy.github.io/images/5-kanban-taulu.png){ width=260 }
-
-# Kanban: WIP-rajojen pienentäminen
-
-![](./images/kanban-taulu-pieni-wip.png){ width=260 }
-
-# Kanban: WIP-rajojen pienentäminen
-
-![](./images/kanban-taulu-wip-1.png){ width=260 }
-
 # Level the work: miksi vaihtelu haittaa?
 
 ![](../ohjelmistotuotanto-hy.github.io/images/5-jono.png){ height=88% }
