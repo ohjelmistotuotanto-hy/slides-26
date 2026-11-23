@@ -344,19 +344,43 @@ def todo_creation():
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luento 10
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24.11.2026
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30.11.2026
 
-# SAFe: paljon rooleja
+# SAFe eli Scaled Agile Framework
 
-![](./images/safe1.png){ width=450 }
+![](../ohjelmistotuotanto-hy.github.io/images/safepic.png){ width=450 }
 
-# SAFe: paljon artefakteja
+# SAFe: tiimitasolla Scrum
 
-![](./images/safe-artif.png){ width=450 }
+![](./images/safe-scrum.png){ width=450 }
 
-# SAFe: backlogit
+# SAFe laajentaa Scrumia
 
-![](../ohjelmistotuotanto-hy.github.io/images/5-safe-backlogit.png){ width=400 }
+![](./images/safe-roolit-tiimit.png){ width=420 }
+
+# SAFe: roolit ja tiimit
+
+![](./images/safe-roolit-1.png){ width=420 }
+
+# SAFe: portfolio
+
+![](./images/safe-roolit-2.png){ width=420 }
+
+# Rytmi, backlogit ja PI planning
+
+![](./images/safe-backlog-1.png){ width=420 }
+
+# Rytmi, backlogit ja PI planning
+
+![](./images/safe-backlog-2.png){ width=420 }
+
+# Rytmi, backlogit ja PI planning
+
+![](./images/safe-backlog-3.png){ width=420 }
+
+# Rytmi, backlogit ja PI planning
+
+![](./images/safe-backlog-4.png){ width=420 }
 
 # LeSS
 
@@ -377,3 +401,11 @@ def todo_creation():
 # Tekniset käytänteet
 
 ![](./images/tekniset.png){ width=340 }
+
+# Scrum of Scrums
+
+![](./images/scrum-of-scrums.png){ width=420 }
+
+# Scrum of Scrums: yksi haara
+
+![](./images/scrum-of-scrums-1.png){ width=200 }
