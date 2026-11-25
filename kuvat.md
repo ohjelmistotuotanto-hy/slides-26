@@ -366,19 +366,15 @@ def todo_creation():
 
 ![](./images/safe-roolit-2.png){ width=420 }
 
-# Rytmi, backlogit ja PI planning
-
-![](./images/safe-backlog-1.png){ width=420 }
-
-# Rytmi, backlogit ja PI planning
+# PI, backlogit ja PI planning
 
 ![](./images/safe-backlog-2.png){ width=420 }
 
-# Rytmi, backlogit ja PI planning
+# PI, backlogit ja PI planning
 
 ![](./images/safe-backlog-3.png){ width=420 }
 
-# Rytmi, backlogit ja PI planning
+# PI, backlogit ja PI planning
 
 ![](./images/safe-backlog-4.png){ width=420 }
 
